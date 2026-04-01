@@ -480,7 +480,7 @@ export default function Checkout() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
           </button>
-          <img src="/images/dkhoun_logo_light.svg" alt="دخون" style={{ height: "28px", objectFit: "contain" }} />
+          <img src="/images/dkhoun_logo_light.svg" alt="دخون" style={{ height: "37px", objectFit: "contain" }} />
         </div>
       </div>
 
@@ -586,14 +586,14 @@ export default function Checkout() {
 
           <div style={{ marginBottom: "14px" }}>
             <input value={name} onChange={e => setName(e.target.value)} placeholder="الاسم الكامل"
-              style={{ width: "100%", padding: "10px 14px", border: "1.5px solid #ebf0f2", borderRadius: "10px", fontSize: "15px", color: "#101631", background: "#fafafa", fontFamily: "'GretaArabicAR', 'NotoNaskhArabic', sans-serif", transition: "border-color 0.2s" }}
+              style={{ width: "100%", padding: "13px 14px", border: "1.5px solid #ebf0f2", borderRadius: "10px", fontSize: "15px", color: "#101631", background: "#fafafa", fontFamily: "'GretaArabicAR', 'NotoNaskhArabic', sans-serif", transition: "border-color 0.2s" }}
               onFocus={e => e.target.style.borderColor = "#101631"} onBlur={e => e.target.style.borderColor = "#ebf0f2"} />
           </div>
 
           <div style={{ marginBottom: "14px" }}>
             <div style={{ display: "flex", gap: "8px" }}>
               <input value={location} readOnly placeholder="حدد موقع التوصيل"
-                style={{ flex: 1, padding: "10px 14px", border: "1.5px solid #ebf0f2", borderRadius: "10px", fontSize: "14px", color: "#101631", background: "#fafafa", fontFamily: "'GretaArabicAR', 'NotoNaskhArabic', sans-serif", cursor: "pointer" }}
+                style={{ flex: 1, padding: "13px 14px", border: "1.5px solid #ebf0f2", borderRadius: "10px", fontSize: "14px", color: "#101631", background: "#fafafa", fontFamily: "'GretaArabicAR', 'NotoNaskhArabic', sans-serif", cursor: "pointer" }}
                 onClick={() => setShowMap(true)} />
               <button onClick={() => setShowMap(true)}
                 style={{ padding: "0 16px", background: "#101631", color: "#f2e3d0", border: "none", borderRadius: "10px", cursor: "pointer", display: "flex", alignItems: "center", gap: "6px", fontSize: "13px", fontFamily: "'GretaArabicAR', 'NotoNaskhArabic', sans-serif", fontWeight: 600, flexShrink: 0 }}>
@@ -605,14 +605,14 @@ export default function Checkout() {
 
           <div>
             <div style={{ display: "flex", gap: "8px", alignItems: "center", direction: "ltr" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "6px", padding: "11px 12px", border: "1.5px solid #ebf0f2", borderRadius: "10px", background: "#fafafa", flexShrink: 0 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "6px", padding: "14px 18px", border: "1.5px solid #ebf0f2", borderRadius: "10px", background: "#fafafa", flexShrink: 0 }}>
                 <span style={{ fontSize: "18px", lineHeight: "0px" }}>🇸🇦</span>
                 <span style={{ fontSize: "13px", fontWeight: 700, color: "#101631" }}>+966</span>
               </div>
               <div style={{ flex: 1, position: "relative" }}>
                 <input value={phone} onChange={e => handlePhoneChange(e.target.value)} placeholder="رقم الجوال" inputMode="numeric"
                   dir={phone.length > 0 ? "ltr" : "rtl"}
-                  style={{ width: "100%", padding: "10px 14px", border: `1.5px solid ${phoneVerified ? "#22c55e" : "#ebf0f2"}`, borderRadius: "10px", fontSize: "15px", color: "#101631", background: phoneVerified ? "#f0fdf4" : "#fafafa", fontFamily: "'GretaArabicAR', 'NotoNaskhArabic', sans-serif", letterSpacing: "0px", transition: "all 0.2s" }}
+                  style={{ width: "100%", padding: "13px 14px", border: `1.5px solid ${phoneVerified ? "#22c55e" : "#ebf0f2"}`, borderRadius: "10px", fontSize: "15px", color: "#101631", background: phoneVerified ? "#f0fdf4" : "#fafafa", fontFamily: "'GretaArabicAR', 'NotoNaskhArabic', sans-serif", letterSpacing: "0px", transition: "all 0.2s" }}
                   onFocus={e => e.target.style.borderColor = "#101631"} onBlur={e => !phoneVerified && (e.target.style.borderColor = "#ebf0f2")} />
                 {phoneVerified && (
                   <span style={{ position: "absolute", right: "12px", top: "50%", transform: "translateY(-50%)", color: "#22c55e", display: "flex", alignItems: "center" }}>
@@ -676,7 +676,7 @@ export default function Checkout() {
               const badge = shippingBadge(opt.id);
               return (
                 <button key={opt.id} onClick={() => setPayMethod(opt.id)} className="pay-card"
-                  style={{ padding: "10px 14px", borderRadius: "12px", border: `2px solid ${payMethod === opt.id ? "#101631" : "#ebf0f2"}`, background: payMethod === opt.id ? "#f9f7f4" : "#fafafa", cursor: "pointer", display: "flex", alignItems: "center", gap: "10px" }}>
+                  style={{ padding: "13px 14px", borderRadius: "12px", border: `2px solid ${payMethod === opt.id ? "#101631" : "#ebf0f2"}`, background: payMethod === opt.id ? "#f9f7f4" : "#fafafa", cursor: "pointer", display: "flex", alignItems: "center", gap: "10px" }}>
                   <span style={{ fontSize: "20px", flexShrink: 0 }}>{opt.icon}</span>
                   <div style={{ flex: 1, display: "flex", alignItems: "center", gap: "8px" }}>
                     <span style={{ fontWeight: 700, fontSize: "13px", color: "#101631", fontFamily: "'GretaArabicAR', 'NotoNaskhArabic', sans-serif" }}>{opt.label}</span>
@@ -733,7 +733,7 @@ export default function Checkout() {
                       onKeyDown={e => e.key === "Enter" && applyCoupon()}
                       placeholder="أدخل كود الخصم إن وجد"
                       dir={coupon.length > 0 ? "ltr" : "rtl"}
-                      style={{ width: "100%", boxSizing: "border-box", padding: couponStatus?.valid ? "9px 12px 9px 36px" : "9px 12px", border: `1.5px solid ${couponStatus?.valid ? "#22c55e" : couponStatus?.valid === false ? "#ef4444" : "#ebf0f2"}`, borderRadius: "10px", fontSize: "13px", color: "#101631", background: couponStatus?.valid ? "#f0fdf4" : "#fafafa", fontFamily: "'GretaArabicAR', 'NotoNaskhArabic', sans-serif", outline: "none", transition: "all 0.2s" }}
+                      style={{ width: "100%", boxSizing: "border-box", padding: couponStatus?.valid ? "12px 12px 12px 36px" : "12px 12px", border: `1.5px solid ${couponStatus?.valid ? "#22c55e" : couponStatus?.valid === false ? "#ef4444" : "#ebf0f2"}`, borderRadius: "10px", fontSize: "13px", color: "#101631", background: couponStatus?.valid ? "#f0fdf4" : "#fafafa", fontFamily: "'GretaArabicAR', 'NotoNaskhArabic', sans-serif", outline: "none", transition: "all 0.2s" }}
                     />
                     {couponStatus?.valid && (
                       <span style={{ position: "absolute", left: "10px", top: "50%", transform: "translateY(-50%)", color: "#22c55e", display: "flex", alignItems: "center", pointerEvents: "none" }}>
@@ -749,7 +749,7 @@ export default function Checkout() {
                 </div>
                 <button
                   onClick={applyCoupon}
-                  style={{ padding: "9px 16px", borderRadius: "10px", background: "#ebf0f2", color: "#101631", border: "none", cursor: "pointer", fontSize: "13px", fontFamily: "'GretaArabicAR', 'NotoNaskhArabic', sans-serif", fontWeight: 700, flexShrink: 0, whiteSpace: "nowrap" }}>
+                  style={{ padding: "13px 16px", borderRadius: "10px", background: "#ebf0f2", color: "#101631", border: "none", cursor: "pointer", fontSize: "13px", fontFamily: "'GretaArabicAR', 'NotoNaskhArabic', sans-serif", fontWeight: 700, flexShrink: 0, whiteSpace: "nowrap" }}>
                   تطبيق
                 </button>
               </div>
