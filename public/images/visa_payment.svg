@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="48" viewBox="0 0 84 48">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_22" data-name="Rectangle 22" width="70" height="40" rx="6" transform="translate(0.116)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_13" data-name="Path 13" d="M289.892-63.364c-.04,3.149,2.806,4.906,4.95,5.951,2.2,1.072,2.943,1.759,2.934,2.718-.017,1.467-1.757,2.115-3.386,2.14a11.817,11.817,0,0,1-5.808-1.381l-1.024,4.79a17.031,17.031,0,0,0,6.289,1.16c5.94,0,9.827-2.932,9.848-7.479.023-5.77-7.981-6.089-7.927-8.669.019-.782.765-1.616,2.4-1.829a10.647,10.647,0,0,1,5.577.977l.994-4.635a15.159,15.159,0,0,0-5.293-.971c-5.591,0-9.524,2.972-9.556,7.227m24.4-6.827a2.578,2.578,0,0,0-2.407,1.6L303.4-48.327h5.936l1.181-3.264h7.254l.685,3.264h5.232l-4.565-21.865h-4.83m.83,5.907,1.713,8.21h-4.692l2.979-8.21m-32.429-5.907-4.679,21.865h5.656l4.677-21.865h-5.654m-8.368,0-5.888,14.882-2.382-12.654a2.637,2.637,0,0,0-2.609-2.228h-9.625l-.135.635a23.549,23.549,0,0,1,5.581,1.86,2.394,2.394,0,0,1,1.343,1.921l4.511,17.449H271.1l9.165-21.865h-5.94" transform="translate(-253.69 70.591)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" y1="0.373" x2="0.008" y2="0.373" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#222357"/>
+      <stop offset="1" stop-color="#254aa5"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_19" data-name="Group 19" transform="translate(-0.116)">
+    <g id="Group_16" data-name="Group 16">
+      <rect id="Rectangle_14" data-name="Rectangle 14" width="84" height="48" rx="6" transform="translate(0.116)" fill="#fff"/>
+      <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(7 4)" clip-path="url(#clip-path)">
+        <g id="Visa_Inc.-Logo.wine" transform="translate(0 8.698)" clip-path="url(#clip-path-2)">
+          <path id="Path_12" data-name="Path 12" d="M0,0,68.971-25.4,84.661,17.206l-68.97,25.4" transform="translate(-7.33 2.7)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
